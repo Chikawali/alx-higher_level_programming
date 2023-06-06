@@ -1,2 +1,1 @@
-# alx-higher_level_programming
-new repo
+THIS IS FOR ALL HIGH LEVEL PROGRAMMING PROJECTS
