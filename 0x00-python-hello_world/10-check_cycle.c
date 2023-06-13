@@ -2,10 +2,10 @@
 #include "lists.h"
 
 /**
- * check_cycle - checks if a single linked list has a cycle within
- * @list: single linked list
- * Return: 0 if there is no cycle, 1 if there is a cycle.
- */
+* check_cycle - checks if a singly linked list has a cycle within.
+* @list: singly linked list.
+* Return: 0 is there is no cycle, 1 if there is a cycle.
+*/
 
 int check_cycle(listint_t *list)
 {
@@ -18,7 +18,7 @@ int check_cycle(listint_t *list)
 	head = list;
 	tail = list;
 
-	while (tail != NUll && tail->next != NULL)
+	while (tail != NULL && tail->next != NULL)
 	{
 		head = head->next;
 		tail = tail->next->next;
