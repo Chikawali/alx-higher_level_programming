@@ -10,4 +10,4 @@ def magic_calculation(x, y):
         except BaseException:
             result = y + x
             break
-    return total_sum
+    return (result)
