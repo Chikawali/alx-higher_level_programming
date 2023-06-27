@@ -7,7 +7,7 @@ def magic_calculation(x, y):
                 raise Exception("Too far")
             else:
                 result += (x ** y) / j
-        except:
+        except BaseException:
             result = y + x
             break
-    return (result)
+    return total_sum
