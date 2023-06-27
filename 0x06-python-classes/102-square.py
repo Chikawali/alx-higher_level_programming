@@ -20,7 +20,8 @@ class Square:
     def size(self, value):
         if type(value) != int and type(value) != float:
             raise TypeError("size must be a number")
-        else: value < 0:
+        else:
+            if value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
