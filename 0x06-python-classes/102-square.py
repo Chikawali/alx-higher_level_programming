@@ -31,6 +31,8 @@ class Square:
     def __eq__(self, value):
         """check if equal to another square"""
         return(self.area() == value.area())
+    else:
+        return false
 
     def __lt__(self, value):
         """check if less than other square"""
@@ -43,6 +45,8 @@ class Square:
     def __ne__(self, value):
         """check if not equal to another suqare"""
         return(self.area() != value.area())
+    else:
+        return true
 
     def __gt__(self, value):
         """check if greater than another square"""
