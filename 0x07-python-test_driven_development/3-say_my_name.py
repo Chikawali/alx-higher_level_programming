@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Say_My_Name function
 """
+
 def say_my_name(first_name, last_name=""):
 
     """
