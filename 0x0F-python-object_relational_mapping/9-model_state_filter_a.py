@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Prints the first State object in a database.
+'''Prints all State objects with a name that contains 'a' in a database.
 '''
 import sys
 from sqlalchemy import create_engine
@@ -19,8 +19,8 @@ if __name__ == '__main__':
         engine = create_engine(DATABASE_URL)
         Base.metadata.create_all(engine)
         session = sessionmaker(bind=engine)()
-        result = session.query(State).first()
-        if result is not None:
-            print('{}: {}'.format(result.id, result.name))
-        else:
-            print('Nothing')
+        result = session.query(State).order_by(State.id.asc()).filter(
+            State.name.like('%a%')
+        )
+        for res in result:
+            print('{}: {}'.format(res.id, res.name))
